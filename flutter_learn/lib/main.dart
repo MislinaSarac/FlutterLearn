@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_learn/101/scaffold_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
+import 'package:flutter_learn/demos/node_demos_view.dart';
 
 import '101/app_bar_learn.dart';
 import '101/button_learn.dart';
@@ -33,6 +34,6 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.transparent,
           elevation: 0,
         )),
-        home: const ImageLearn());
+        home: const NodeDemos());
   }
 }
