@@ -6,7 +6,6 @@ class NodeDemos extends StatelessWidget {
   const NodeDemos({super.key});
   final _title = "Create your first your note";
   final _description = "add a note ";
-  // ignore: unused_field
   final _createNote = "Create a note";
   final _importNotes = "Import Notes";
 
