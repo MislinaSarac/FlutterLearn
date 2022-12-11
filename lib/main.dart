@@ -9,7 +9,9 @@ import '101/app_bar_learn.dart';
 import '101/button_learn.dart';
 import '101/card_learn.dart';
 import '101/color_learn.dart';
+import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
+import '101/indicator_learn.dart';
 import '101/padding_learn.dart';
 import '101/stateless_learn.dart';
 import '101/image_learn.dart';
@@ -28,12 +30,15 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
+            progressIndicatorTheme: ProgressIndicatorThemeData(
+              color: Colors.white,
+            ),
             appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          systemOverlayStyle: SystemUiOverlayStyle.light,
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        )),
-        home: NodeDemos());
+              centerTitle: true,
+              systemOverlayStyle: SystemUiOverlayStyle.light,
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+            )),
+        home: IndicatorLearn());
   }
 }
