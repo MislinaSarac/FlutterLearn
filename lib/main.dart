@@ -14,9 +14,11 @@ import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/indicator_learn.dart';
 import '101/padding_learn.dart';
+import '101/stack_learn.dart';
 import '101/stateless_learn.dart';
 import '101/image_learn.dart';
 import '101/list_tile_learn.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,6 +43,6 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.transparent,
               elevation: 0,
             )),
-        home: ColumnRowLearn());
+        home: const StackDemoView());
   }
 }
