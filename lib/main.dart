@@ -17,6 +17,7 @@ import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
+import '101/statefull_life_cycle_learn.dart';
 import '101/stateless_learn.dart';
 import '101/image_learn.dart';
 import '101/list_tile_learn.dart';
@@ -33,18 +34,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark().copyWith(
-            progressIndicatorTheme: const ProgressIndicatorThemeData(
-              color: Colors.white,
-            ),
-            appBarTheme: const AppBarTheme(
-              centerTitle: true,
-              systemOverlayStyle: SystemUiOverlayStyle.light,
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-            )),
-        home: const PageViewLearn());
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme: const ProgressIndicatorThemeData(
+            color: Colors.white,
+          ),
+          appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+          )),
+      home: StatefullLifeCycleLearn(message: "Mislina"),
+    );
   }
 }
