@@ -21,6 +21,7 @@ import '101/statefull_life_cycle_learn.dart';
 import '101/stateless_learn.dart';
 import '101/image_learn.dart';
 import '101/list_tile_learn.dart';
+import '101/text_field_learn.dart';
 import 'demos/stack_demo_view.dart';
 
 void main() {
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: StatefullLifeCycleLearn(message: "Mislina"),
+      home: const TextFieldLearn(),
     );
   }
 }
