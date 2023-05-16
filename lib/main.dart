@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_learn/101/scaffold_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
+import 'package:flutter_learn/demos/color_life_cycle_view.dart';
 import 'package:flutter_learn/demos/node_demos_view.dart';
 
 import '101/app_bar_learn.dart';
@@ -22,7 +23,9 @@ import '101/stateless_learn.dart';
 import '101/image_learn.dart';
 import '101/list_tile_learn.dart';
 import '101/text_field_learn.dart';
+import 'demos/color_demos_view.dart';
 import 'demos/stack_demo_view.dart';
+import 'demos/color_life_cycle_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +34,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the  of yourootr application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -47,7 +50,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const StackDemoView(),
+      home: ColorLifeCycleView(),
     );
   }
 }
