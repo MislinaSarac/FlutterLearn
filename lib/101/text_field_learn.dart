@@ -22,7 +22,7 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
       body: Column(
         children: [
           const TextField(
-            maxLength: 20,
+            maxLength: 100,
             keyboardType: TextInputType.emailAddress,
             autofillHints: [AutofillHints.email],
             // focusNode: focusNodeTextFieldOne,
