@@ -4,6 +4,7 @@ import 'package:flutter_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_learn/101/scaffold_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
 import 'package:flutter_learn/demos/color_life_cycle_view.dart';
+import 'package:flutter_learn/demos/my_collections_demos.dart';
 import 'package:flutter_learn/demos/node_demos_view.dart';
 
 import '101/app_bar_learn.dart';
@@ -14,6 +15,7 @@ import '101/column_row_learn.dart';
 import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/indicator_learn.dart';
+import '101/list_view_builder_learn.dart';
 import '101/list_view_learn.dart';
 import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
@@ -51,7 +53,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: ListViewLearn(),
+      home: const ListViewBuilderLearn(),
     );
   }
 }

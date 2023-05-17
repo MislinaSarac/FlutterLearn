@@ -27,7 +27,7 @@ class _ListViewLearnState extends State<ListViewLearn> {
           SizedBox(
             height: 300,
             child: ListView(
-                shrinkWrap: true,
+                shrinkWrap: false,
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(color: Colors.pink, width: 100),
