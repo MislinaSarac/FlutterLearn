@@ -7,7 +7,6 @@ import 'package:flutter_learn/demos/color_life_cycle_view.dart';
 import 'package:flutter_learn/demos/node_demos_view.dart';
 import 'package:flutter_learn/demos/my_collection_demos.dart';
 
-
 import '101/app_bar_learn.dart';
 import '101/button_learn.dart';
 import '101/card_learn.dart';
@@ -29,6 +28,7 @@ import '101/stateless_learn.dart';
 import '101/image_learn.dart';
 import '101/list_tile_learn.dart';
 import '101/text_field_learn.dart';
+import '202/tab_learn.dart';
 import 'demos/color_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 import 'demos/color_life_cycle_view.dart';
@@ -48,6 +48,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          tabBarTheme: const TabBarTheme(
+            labelColor: Colors.pink,
+            unselectedLabelColor: Colors.blue,
+            indicatorSize: TabBarIndicatorSize.label,
+          ),
+          bottomAppBarTheme: BottomAppBarTheme(
+            shape: CircularNotchedRectangle(),
+          ),
           progressIndicatorTheme: const ProgressIndicatorThemeData(
             color: Colors.white,
           ),
@@ -57,7 +65,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const NavigationLearn(),
+      home: TabLearn(),
     );
   }
 }
