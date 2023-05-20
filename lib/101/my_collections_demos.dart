@@ -100,5 +100,5 @@ class PaddindUtility {
 }
 
 class ProjectImages {
-  static const imageCollection = 'assets/png/image_collection1.png';
+  static const imageCollection = 'assets/png/art.png';
 }
